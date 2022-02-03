@@ -1,6 +1,7 @@
 # desired Caddy version
 ARG VERSION=2.4.6
 
+
 ###########
 # builder #
 FROM caddy:${VERSION}-builder-alpine AS builder
