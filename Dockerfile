@@ -8,6 +8,7 @@ FROM caddy:${VERSION}-builder-alpine AS builder
 ARG VERSION
 RUN xcaddy build v${VERSION} \
   --with github.com/caddy-dns/cloudflare
+  --with github.com/caddyserver/replace-response
 
 #########
 # image #
